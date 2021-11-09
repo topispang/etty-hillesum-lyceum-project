@@ -7,12 +7,4 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
-
-  input: string;
-  output: string;
-
-  doeIets() {
-    this.output = this.input;
-    this.input = '';
-  }
 }

@@ -4,7 +4,6 @@ img.profile {
 }
 
 .container {
-  border-bottom: 1px solid #ccc;
   width: 100%;
 }
 
@@ -13,11 +12,13 @@ img.profile {
   float: left;
   text-align: left;
 }
+
 .rechts {
   width: 75%;
   float: left;
   text-align: right;
 }
+
 .clearfix {
   clear: both;
 }
