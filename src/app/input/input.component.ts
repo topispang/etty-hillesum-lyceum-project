@@ -9,7 +9,7 @@ export class InputComponent {
   input: string;
   output: string;
 
-  doeIets() {
+  verplaats() {
     this.output = this.input;
     this.input = '';
   }
