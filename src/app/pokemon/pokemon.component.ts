@@ -10,8 +10,6 @@ export class PokemonComponent {
   pokemonPlaatje: string;
 
   updatePokemon() {
-    if (this.pokemon.length < 3) {
-    }
     this.pokemonPlaatje =
       'https://serebii.net/pokemon/art/' + this.pokemon + '.png';
   }
