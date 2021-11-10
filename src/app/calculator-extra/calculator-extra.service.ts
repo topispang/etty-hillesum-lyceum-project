@@ -27,9 +27,6 @@ export class CalculatorExtraService {
   bereken(): number {
     let uitkomst: number;
 
-    console.log(this.eersteGetal);
-    console.log(this.tweedeGetal);
-
     switch (this.action) {
       case Actions.OPTELLEN:
         uitkomst = +this.eersteGetal + +this.tweedeGetal;
