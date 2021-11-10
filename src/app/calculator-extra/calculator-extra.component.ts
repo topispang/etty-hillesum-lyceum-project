@@ -10,10 +10,10 @@ import { CalculatorExtraService } from './calculator-extra.service';
 })
 export class CalculatorExtraComponent {
   som: string;
-  eerste: string;
-  action: Actions;
-  tweede: string;
+  eerste: number;
+  tweede: number;
   input: number;
+  action: Actions;
 
   constructor(private calculatorExtraService: CalculatorExtraService) {}
 
@@ -34,9 +34,9 @@ export class CalculatorExtraComponent {
   }
 
   bereken() {
-    this.tweede = this.input.toString();
+    this.tweede = this.input;
     this.calculatorExtraService.setGetal(this.input);
-    this.som = ' = ' + this.calculatorExtraService.bereken().toString();
+    this.som = ' = ' + this.calculatorExtraService.bereken();
     this.clearInput();
   }
 
@@ -44,7 +44,7 @@ export class CalculatorExtraComponent {
     if (this.action != Actions.GEEN) {
       this.clearDisplay();
     }
-    this.eerste = this.input.toString();
+    this.eerste = this.input;
     this.action = action;
     this.calculatorExtraService.setGetal(this.input);
     this.calculatorExtraService.setAction(action);
@@ -59,8 +59,8 @@ export class CalculatorExtraComponent {
 
   clearDisplay() {
     this.som = '';
-    this.eerste = '';
-    this.tweede = '';
+    this.eerste = null;
+    this.tweede = null;
     this.action = Actions.GEEN;
   }
 
