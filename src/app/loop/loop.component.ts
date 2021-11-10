@@ -4,7 +4,7 @@ import { Loop } from './loop';
 import { LoopService } from './loop.service';
 
 @Component({
-  selector: 'app-loop',
+  selector: 'loop-app',
   templateUrl: './loop.component.html',
   styleUrls: ['./loop.component.css'],
 })
