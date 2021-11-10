@@ -11,6 +11,13 @@ export class CalculatorComponent {
   tweedeGetal: number;
   som: string;
 
+  clear() {
+    this.input = null;
+    this.eersteGetal = null;
+    this.tweedeGetal = null;
+    this.som = '';
+  }
+
   optellen() {
     this.eersteGetal = this.input;
     this.input = null;
@@ -26,18 +33,20 @@ export class CalculatorComponent {
   updateSom() {
     if (this.tweedeGetal == null) {
       this.som = this.eersteGetal.toString();
-    } else if (this.eersteGetal == null) {
-      this.som =
-        this.eersteGetal.toString() + ' + ' + this.tweedeGetal.toString();
+    } else if (this.eersteGetal != null && this.tweedeGetal != null) {
+      this.getallenOptellen(this.eersteGetal, this.tweedeGetal);
     } else {
-      let optelling = +this.eersteGetal + +this.tweedeGetal;
-
-      this.som =
-        this.eersteGetal.toString() +
-        ' + ' +
-        this.tweedeGetal.toString() +
-        ' = ' +
-        optelling.toString();
+      this.clear();
     }
+  }
+
+  getallenOptellen(eerste: number, tweede: number) {
+    let optelling = +eerste + +tweede;
+    this.som =
+      this.eersteGetal.toString() +
+      ' + ' +
+      this.tweedeGetal.toString() +
+      ' = ' +
+      optelling.toString();
   }
 }
