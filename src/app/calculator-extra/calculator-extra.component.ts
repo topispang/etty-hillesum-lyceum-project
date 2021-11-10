@@ -41,6 +41,9 @@ export class CalculatorExtraComponent {
   }
 
   eersteActie(action: Actions) {
+    if (this.action != Actions.GEEN) {
+      this.clearDisplay();
+    }
     this.eerste = this.input.toString();
     this.action = action;
     this.calculatorExtraService.setGetal(this.input);
@@ -49,12 +52,16 @@ export class CalculatorExtraComponent {
   }
 
   clear() {
+    this.clearDisplay();
+    this.clearInput();
+    this.calculatorExtraService.reset();
+  }
+
+  clearDisplay() {
     this.som = '';
     this.eerste = '';
     this.tweede = '';
     this.action = Actions.GEEN;
-    this.clearInput();
-    this.calculatorExtraService.reset();
   }
 
   clearInput() {

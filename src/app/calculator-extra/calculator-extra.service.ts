@@ -39,9 +39,12 @@ export class CalculatorExtraService {
         break;
       case Actions.VERMENIGVULDIGEN:
         uitkomst = +this.eersteGetal * +this.tweedeGetal;
+        break;
       default:
         uitkomst = null;
+        break;
     }
+
     this.reset();
     return uitkomst;
   }
