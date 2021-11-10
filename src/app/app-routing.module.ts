@@ -5,6 +5,7 @@ import { InputComponent } from './input/input.component';
 import { HomeComponent } from './home/home.component';
 import { LoopComponent } from './loop/loop.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'input', component: InputComponent },
   { path: 'loop', component: LoopComponent },
   { path: 'pokemon', component: PokemonComponent },
+  { path: 'calculator', component: CalculatorComponent },
 ];
 
 @NgModule({

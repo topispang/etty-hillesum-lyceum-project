@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { InputComponent } from './input/input.component';
 import { LoopComponent } from './loop/loop.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
     InputComponent,
     LoopComponent,
     PokemonComponent,
+    CalculatorComponent,
   ],
   bootstrap: [AppComponent],
 })
