@@ -5,18 +5,23 @@ img.profile {
 
 .container {
   width: 100%;
+  background-color: blue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #202327;
 }
 
 .links {
   width: 25%;
   float: left;
   text-align: left;
+  padding-top: 20px;
 }
 
 .rechts {
   width: 75%;
   float: left;
   text-align: right;
+  background-color: yellow;
 }
 
 .clearfix {
