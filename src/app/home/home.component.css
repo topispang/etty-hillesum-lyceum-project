@@ -5,9 +5,9 @@ img.profile {
 
 .container {
   width: 100%;
-  background-color: blue;
+  background-color: #004899;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #202327;
+  color: #3c3c3c;
 }
 
 .links {
@@ -21,7 +21,7 @@ img.profile {
   width: 75%;
   float: left;
   text-align: right;
-  background-color: yellow;
+  background-color: #f8e800;
 }
 
 .clearfix {
