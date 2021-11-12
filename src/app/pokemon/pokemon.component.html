@@ -1,2 +1,2 @@
-<input [(ngModel)]="pokemon" (change)="updatePokemon()" /> <br />
+<input [(ngModel)]="pokemon" (keyup.enter)="updatePokemon()" /> <br />
 <img [src]="pokemonPlaatje" />
