@@ -7,17 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimpleLoopComponent implements OnInit {
   input: number;
+  aantal: number = 10;
   texts: number[];
 
-  constructor() {}
-
   ngOnInit() {
-    this.texts = Array<number>();
+    this.clear();
   }
 
   update() {
-    for (let index = 0; index < 10; index++) {
+    this.clear();
+    for (let index = 0; index < this.aantal; index++) {
       this.texts.push(this.input);
     }
+    console.log(this.texts);
+  }
+
+  clear() {
+    this.texts = Array<number>();
   }
 }

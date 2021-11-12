@@ -1,2 +1,3 @@
-<input [(ngModel)]="input" (change)="update()" />
+<input [(ngModel)]="input" (keyup.enter)="update()" /> X
+<input [(ngModel)]="aantal" (keyup.enter)="update()" />
 <div *ngFor="let text of texts">{{ text }}</div>
