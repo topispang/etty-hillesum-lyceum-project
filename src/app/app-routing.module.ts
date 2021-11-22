@@ -8,6 +8,7 @@ import { SimpleLoopComponent } from './simple-loop/simple-loop.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalculatorExtraComponent } from './calculator-extra/calculator-extra.component';
+import { HtmlExample1Component } from './html-example-1/html-example-1.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'pokemon', component: PokemonComponent },
   { path: 'calculator', component: CalculatorComponent },
   { path: 'calculator-extra', component: CalculatorExtraComponent },
+  { path: 'html-example-1', component: HtmlExample1Component },
 ];
 
 @NgModule({

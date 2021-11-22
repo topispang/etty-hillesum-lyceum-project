@@ -10,6 +10,7 @@ import { SimpleLoopComponent } from './simple-loop/simple-loop.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalculatorExtraComponent } from './calculator-extra/calculator-extra.component';
+import { HtmlExample1Component } from './html-example-1/html-example-1.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -24,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
     PokemonComponent,
     CalculatorComponent,
     CalculatorExtraComponent,
+    HtmlExample1Component,
   ],
   bootstrap: [AppComponent],
 })
