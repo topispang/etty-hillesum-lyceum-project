@@ -11,6 +11,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalculatorExtraComponent } from './calculator-extra/calculator-extra.component';
 import { HtmlExample1Component } from './html-example-1/html-example-1.component';
+import { HtmlExample2Component } from './html-example-2/html-example-2.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -26,6 +27,7 @@ import { AppRoutingModule } from './app-routing.module';
     CalculatorComponent,
     CalculatorExtraComponent,
     HtmlExample1Component,
+    HtmlExample2Component,
   ],
   bootstrap: [AppComponent],
 })
