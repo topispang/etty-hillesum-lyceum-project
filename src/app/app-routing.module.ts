@@ -10,6 +10,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CalculatorExtraComponent } from './calculator-extra/calculator-extra.component';
 import { HtmlExample1Component } from './html-example-1/html-example-1.component';
 import { HtmlExample2Component } from './html-example-2/html-example-2.component';
+import { CssExample1Component } from './css-example-1/css-example-1.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'calculator-extra', component: CalculatorExtraComponent },
   { path: 'html-example-1', component: HtmlExample1Component },
   { path: 'html-example-2', component: HtmlExample2Component },
+  { path: 'css-example-1', component: CssExample1Component },
 ];
 
 @NgModule({

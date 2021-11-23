@@ -1,0 +1,25 @@
+.cool {
+  font-family: 'Wingdings 3';
+}
+
+.red {
+  background-color: red;
+  color: yellow;
+}
+
+.red:hover {
+  background-color: blue;
+}
+
+.parent {
+  border-style: dotted;
+  background-color: yellow;
+}
+
+.parent p {
+  background-color: pink;
+}
+
+:host {
+  color: green;
+}
