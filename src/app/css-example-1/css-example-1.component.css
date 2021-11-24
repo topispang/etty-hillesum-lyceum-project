@@ -1,25 +1,43 @@
+/* als ik .cool als class ergens op toepas wordt het font Wingdings */
 .cool {
   font-family: 'Wingdings 3';
 }
 
+/* als ik .red als class ergens op toepas de achtergrond rood en tekstkleur geel */
 .red {
   background-color: red;
   color: yellow;
 }
 
+/* als ik :hover op een class toepas wordt de achtergrond blauw als ik er met mn muis over ga  */
 .red:hover {
   background-color: blue;
 }
 
+/* als ik .parent als class ergens op toepas bijvoorbeeld de div, dan krijgt die een rand */
+/* en een achtergrondkleur */
 .parent {
   border-style: dotted;
   background-color: yellow;
 }
 
+/* als ik in de div met class parent een p zet, dan krijg die een roze achtergrond */
 .parent p {
   background-color: pink;
 }
 
+/* als ik .footer als class ergens op toepas dan zet die dat onder aan de pagina */
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 10px;
+  right: 10px;
+  clear: right;
+}
+
+/* :host wordt gebruikt voor alles wat je ziet op de pagina */
+/* het wordt wel overschreven door styling die wordt toegepast op classes */
 :host {
   color: green;
 }
