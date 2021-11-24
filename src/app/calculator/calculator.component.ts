@@ -6,27 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator.component.css'],
 })
 export class CalculatorComponent {
-  input: number;
+  invoer: number;
   eersteGetal: number;
   tweedeGetal: number;
   som: string;
 
   clear() {
-    this.input = null;
+    this.invoer = null;
     this.eersteGetal = null;
     this.tweedeGetal = null;
     this.som = '';
   }
 
   optellen() {
-    this.eersteGetal = this.input;
-    this.input = null;
+    this.eersteGetal = this.invoer;
+    this.invoer = null;
     this.updateSom();
   }
 
   uitrekenen() {
-    this.tweedeGetal = this.input;
-    this.input = null;
+    this.tweedeGetal = this.invoer;
+    this.invoer = null;
     this.updateSom();
   }
 

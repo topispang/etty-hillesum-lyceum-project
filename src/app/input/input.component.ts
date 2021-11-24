@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.css'],
 })
 export class InputComponent {
-  input: string;
-  output: string;
+  invoer: string = '';
+  uitvoer: string = '';
 
   verplaats() {
-    this.output = this.input;
-    this.input = '';
+    this.uitvoer = this.invoer;
+    this.invoer = '';
   }
 }
